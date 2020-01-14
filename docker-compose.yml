@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+    
+  server:
+    container_name: grpc_server
+    build:
+      context: .
+    ports:
+      - "9090:9090"
+    restart: unless-stopped
